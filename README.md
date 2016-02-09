@@ -36,11 +36,13 @@ BL shall be independant from the hardware platform.
   - PWM -> pwm
   - SBS -> step by step motor (without easy driver)
   - DHT -> DHT sensor 
+
 # To be done
  - BL RFID
  - BL RGB
  - VP encryption
  - VP set sequence
+ 
 # Installing
 
   - unzip the github directory in your arduino libraries directory
