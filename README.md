@@ -1,14 +1,14 @@
 AcSeDo
 ======
 The aim of Accessible Secured Domotic is to provide a complete frameworks of tools to permit the configuration of any home automation with security, inexpensive cost, little knowledge.
-Tools
-->Acsedo online module generator
-  Based on user needs permit to generate the module configuration file and the server part.
-->Acsedo server
-  Server to manage the differents module of an installation. 
-  Because our security is based on unique encrytion key, server is internal.
-->Acsedo modules
-  Modules composed of sensor and actuator.
+#Tools:
+  - Acsedo online module generator
+Based on user needs permit to generate the module configuration file and the server part.
+  - Acsedo server
+Server to manage the differents module of an installation. 
+Because our security is based on unique encrytion key, server is internal.
+  - Acsedo modules
+Modules composed of sensor and actuator.
 
 Acsedo arduino lib for Arduino chip
 ===================================
@@ -18,10 +18,11 @@ This project brings framework for accessible secured home automation over arduin
 The aim of the project is to have module based on arduino SDK.
 This module run a VP (vital platform) an dynamically load bl (business logic) based on a config.json file. 
 BL shall be independant from the hardware platform.
-The VP is in charge of: 
--communication with the websocket server
--encryption
--loading/saving the config
+
+#The VP is in charge of: 
+  - communication with the websocket server
+  - encryption
+  - loading/saving the config
 
 # Contents
 - VP vital platform for ESP8266
