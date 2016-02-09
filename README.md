@@ -1,20 +1,62 @@
-Acsedo core for Arduino chip
-==============================
+AcSeDo
+======
+The aim of Accessible Secured Domotic is to provide a complete frameworks of tools to permit the configuration of any home automation with security, inexpensive cost, little knowledge.
+Tools
+->Acsedo online module generator
+  Based on user needs permit to generate the module configuration file and the server part.
+->Acsedo server
+  Server to manage the differents module of an installation. 
+  Because our security is based on unique encrytion key, server is internal.
+->Acsedo modules
+  Modules composed of sensor and actuator.
 
-This project brings support for accessible secured home automation over arduino board.
+Acsedo arduino lib for Arduino chip
+===================================
+
+This project brings framework for accessible secured home automation over arduino board.
+
+The aim of the project is to have module based on arduino SDK.
+This module run a VP (vital platform) an dynamically load bl (business logic) based on a config.json file. 
+BL shall be independant from the hardware platform.
+The VP is in charge of: 
+-communication with the websocket server
+-encryption
+-loading/saving the config
 
 # Contents
-- VP vital platform  
-
-### Installing  ###
-
+- VP vital platform for ESP8266
+- BLS:
+  - GPI -> digital input
+  - GPO -> digital output
+  - PWM -> pwm
+  - SBS -> step by step motor (without easy driver)
+  - DHT -> DHT sensor 
+# To be done
+ - BL RFID
+ - BL RGB
+ - VP encryption
+ - VP set sequence
+Installing
+----------
 -unzip the github directory in your arduino libraries directory
 
 depandencies:
 
-#### Available versions
+https://github.com/jc19000/arduinoWebSockets
+->modify version of advise websocket library to permit method callback instead of function
 
+https://github.com/bblanchon/ArduinoJson
+->used for configuration of the VP, configuration of the BL, communication with the websocket server
 
+For ESP8266:https://github.com/esp8266/Arduino
+
+Available versions
+------------------
+only stagging one
+
+Documentation
+-------------
+The documentation is available online in the [Acsedo arduino wiki](https://github.com/jc19000/Acsedo_arduino_lib/wiki)
 
 ### Issues and support ###
 
