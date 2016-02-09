@@ -1,13 +1,17 @@
 AcSeDo
 ======
 The aim of Accessible Secured Domotic is to provide a complete frameworks of tools to permit the configuration of any home automation with security, inexpensive cost, little knowledge.
-#Tools:
+# Tools:
   - Acsedo online module generator
+
 Based on user needs permit to generate the module configuration file and the server part.
   - Acsedo server
+
 Server to manage the differents module of an installation. 
 Because our security is based on unique encrytion key, server is internal.
+
   - Acsedo modules
+
 Modules composed of sensor and actuator.
 
 Acsedo arduino lib for Arduino chip
@@ -19,7 +23,7 @@ The aim of the project is to have module based on arduino SDK.
 This module run a VP (vital platform) an dynamically load bl (business logic) based on a config.json file. 
 BL shall be independant from the hardware platform.
 
-#The VP is in charge of: 
+# The VP is in charge of: 
   - communication with the websocket server
   - encryption
   - loading/saving the config
@@ -37,11 +41,11 @@ BL shall be independant from the hardware platform.
  - BL RGB
  - VP encryption
  - VP set sequence
-Installing
-----------
--unzip the github directory in your arduino libraries directory
+# Installing
 
-depandencies:
+  - unzip the github directory in your arduino libraries directory
+
+## depandencies:
 
 https://github.com/jc19000/arduinoWebSockets
 ->modify version of advise websocket library to permit method callback instead of function
@@ -51,12 +55,12 @@ https://github.com/bblanchon/ArduinoJson
 
 For ESP8266:https://github.com/esp8266/Arduino
 
-Available versions
-------------------
+# Available versions
+
 only stagging one
 
-Documentation
--------------
+# Documentation
+
 The documentation is available online in the [Acsedo arduino wiki](https://github.com/jc19000/Acsedo_arduino_lib/wiki)
 
 ### Issues and support ###
