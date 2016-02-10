@@ -1,0 +1,17 @@
+{
+"id":210, 
+"type":"TempHum",
+"ssid":"$SSID", 
+"password":"$PASSWORD",
+"startOfFrame":"$STARTOFFRAME", 
+"endOfFrame":"$ENDOFFRAME", 
+"pushingPeriod":30,
+"serialSpeed":9600,  
+"websocketUrl":"$WEBSOCKETURL", 
+"webscoketPort":$WEBSOCKETPORT, 
+"webscoketPath":"$WEBSOCKETPATH", 
+"bls":[
+	{"bl":"DHT","period":1,"type":22,"pin":2},
+	]
+}
+
